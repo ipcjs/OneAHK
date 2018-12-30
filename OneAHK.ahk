@@ -44,10 +44,4 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/block_number_key.ext.ahk
 ; #Include, src/torrent_import.ext.ahk
 ; #Include, src/auto_start_thunder_down.ext.ahk
-
-
-; 重启/退出/帮助/打开目录
-^!+r::Reload
-^!+q::ExitApp, 0
-^!+F1::Run http://ahkcn.sourceforge.net/docs/AutoHotkey.htm
-^!+e::Run % A_ScriptDir
+#Include, src/ahk_helper.ext.ahk
