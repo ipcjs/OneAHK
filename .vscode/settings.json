@@ -1,0 +1,6 @@
+{
+    "files.autoGuessEncoding": true,
+    "[ahk]": {
+        "files.encoding": "utf8bom"
+    }
+}
