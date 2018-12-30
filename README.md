@@ -1,6 +1,8 @@
 # OneAHK
 
-## 介绍
+使用最简单的方式组织各种AHK的快捷功能
+
+## 说明
 
 详细说明，参见[OneAHK.ahk](OneAHK.ahk)的注释
 
