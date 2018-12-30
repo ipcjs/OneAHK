@@ -1,5 +1,5 @@
-; µ¯ÍèÂÛÆÆ¸¨Öú°´¼ü¹¤¾ß
-; alt+ÓÒ¼ü, ¿ª/¹ØÓÒ¼ü×Ô¶¯²¥·Å
+ï»¿; å¼¹ä¸¸è®ºç ´è¾…åŠ©æŒ‰é”®å·¥å…·
+; alt+å³é”®, å¼€/å…³å³é”®è‡ªåŠ¨æ’­æ”¾
 
 ; dr2_rbutton_flag := True
 get_DR2_WIN_TITLE(){
@@ -8,7 +8,7 @@ get_DR2_WIN_TITLE(){
 }
 
 UpdateState(){
-	global dr2_rbutton_flag ; Ê¹º¯ÊıÄÚ¿ÉÒıÓÃÈ«¾Ö±äÁ¿
+	global dr2_rbutton_flag ; ä½¿å‡½æ•°å†…å¯å¼•ç”¨å…¨å±€å˜é‡
 	ShowText(dr2_rbutton_flag ? "ON" : "OFF")
 }
 
@@ -18,12 +18,12 @@ ShowText(text){
 	ToolTip
 }
 
-; µ¯Íè2°´¼ü¸¨Öú
+; å¼¹ä¸¸2æŒ‰é”®è¾…åŠ©
 #If, WinActive(get_DR2_WIN_TITLE())
 f::LButton
 g::RButton
 !RButton:: 
-dr2_rbutton_flag := !dr2_rbutton_flag ; dr2_rbutton_flagÎ´³õÊ¼»¯, Ä¬ÈÏÎª"", Ïàµ±ÓÚFalse
+dr2_rbutton_flag := !dr2_rbutton_flag ; dr2_rbutton_flagæœªåˆå§‹åŒ–, é»˜è®¤ä¸º"", ç›¸å½“äºFalse
 UpdateState()
 Return
 #If
@@ -34,15 +34,15 @@ RButton::Space
 
 ; InitGui(){
 ; 	global
-; 	Gui +LastFound +AlwaysOnTop -Caption +ToolWindow ; ÉèÖÃ»ù±¾µÄ´°¿ÚÊôĞÔ, ÖÃ¶¥µÈ
-; 	; Gui, Color, FFFF00 ; ´°¿Ú±³¾°ÑÕÉ«
-; 	Gui, add, Text, vMyText, XXX ; Ìí¼ÓÎÄ±¾¿ò, idÎªMyText, Ä¬ÈÏÎÄ±¾ÎªXXX
+; 	Gui +LastFound +AlwaysOnTop -Caption +ToolWindow ; è®¾ç½®åŸºæœ¬çš„çª—å£å±æ€§, ç½®é¡¶ç­‰
+; 	; Gui, Color, FFFF00 ; çª—å£èƒŒæ™¯é¢œè‰²
+; 	Gui, add, Text, vMyText, XXX ; æ·»åŠ æ–‡æœ¬æ¡†, idä¸ºMyText, é»˜è®¤æ–‡æœ¬ä¸ºXXX
 ; }
 
 ; ShowText(text){
 ; 	global
-; 	Gui, Show, x0 y0, NoActivate ; ÔÚ(0, 0)´¦ÏÔÊ¾´°¿Ú
-; 	GuiControl, , MyText, % text ; ¸üĞÂMyTextµÄÎÄ±¾
+; 	Gui, Show, x0 y0, NoActivate ; åœ¨(0, 0)å¤„æ˜¾ç¤ºçª—å£
+; 	GuiControl, , MyText, % text ; æ›´æ–°MyTextçš„æ–‡æœ¬
 ; 	Sleep, 1000
-; 	Gui, Hide ; Òş²Ø´°¿Ú
+; 	Gui, Hide ; éšè—çª—å£
 ; }

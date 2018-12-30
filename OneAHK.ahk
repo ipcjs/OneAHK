@@ -1,13 +1,13 @@
-; ¿ì½Ý¹¤¾ß
-; Í¨¹ýµ¼ÈëÄ£¿éµÄÐÎÊ½À©Õ¹¹¦ÄÜ, Ä£¿éÖÐÓÃµ½µÄ·½·¨/±äÁ¿¾¡Á¿²»ÒªÖØÃû
-#SingleInstance, force ; µ¥ÊµÀý
-; ¿ªÆô³ýUseUnsetGlobalÒÔÍâµÄËùÓÐ¾¯¸æ
+ï»¿; å¿«æ·å·¥å…·
+; é€šè¿‡å¯¼å…¥æ¨¡å—çš„å½¢å¼æ‰©å±•åŠŸèƒ½, æ¨¡å—ä¸­ç”¨åˆ°çš„æ–¹æ³•/å˜é‡å°½é‡ä¸è¦é‡å
+#SingleInstance, force ; å•å®žä¾‹
+; å¼€å¯é™¤UseUnsetGlobalä»¥å¤–çš„æ‰€æœ‰è­¦å‘Š
 #Warn, All, MsgBox
 #Warn, UseUnsetGlobal, Off
-TrayTip, , ¿ì½Ý¹¤¾ß, 1, 16
+TrayTip, , å¿«æ·å·¥å…·, 1, 16
 
-; µ¼ÈëlibÄ£¿é
-; libÄ£¿éÖ»°üº¬"³õÊ¼»¯´úÂë¿é"ºÍ·½·¨, ²»ÄÜ°üº¬ÈÈ¼ü/ÈÈ×Ö´®/±êÇ©/Return
+; å¯¼å…¥libæ¨¡å—
+; libæ¨¡å—åªåŒ…å«"åˆå§‹åŒ–ä»£ç å—"å’Œæ–¹æ³•, ä¸èƒ½åŒ…å«çƒ­é”®/çƒ­å­—ä¸²/æ ‡ç­¾/Return
 #Include, test.lib.ahk
 #Include, tooltip_and_log.lib.ahk
 #Include, process_util.lib.ahk
@@ -16,12 +16,12 @@ TrayTip, , ¿ì½Ý¹¤¾ß, 1, 16
 
 
 
-; µ¼ÈëextÄ£¿é
-; extÄ£¿éÖ»°üº¬ÈÈ¼ü/ÈÈ×Ö´®/±êÇ©ºÍ·½·¨, ²»ÄÜ°üº¬"³õÊ¼»¯´úÂë¿é"
-; ´úÂë¹æ·¶: 
-; aa_bb_cc: ¾Ö²¿±äÁ¿/Ä£¿éÃû
-; s_aa_bb_cc: ¾²Ì¬±äÁ¿
-; AaBbCc: È«¾Ö±äÁ¿/º¯Êý/ÃüÁî/Àà
+; å¯¼å…¥extæ¨¡å—
+; extæ¨¡å—åªåŒ…å«çƒ­é”®/çƒ­å­—ä¸²/æ ‡ç­¾å’Œæ–¹æ³•, ä¸èƒ½åŒ…å«"åˆå§‹åŒ–ä»£ç å—"
+; ä»£ç è§„èŒƒ: 
+; aa_bb_cc: å±€éƒ¨å˜é‡/æ¨¡å—å
+; s_aa_bb_cc: é™æ€å˜é‡
+; AaBbCc: å…¨å±€å˜é‡/å‡½æ•°/å‘½ä»¤/ç±»
 ; 
 #Include, test.ext.ahk
 ; #Include, dr2_helper.ext.ahk
@@ -46,7 +46,7 @@ TrayTip, , ¿ì½Ý¹¤¾ß, 1, 16
 ; #Include, auto_start_thunder_down.ext.ahk
 
 
-; ÖØÆô/ÍË³ö/°ïÖú/´ò¿ªÄ¿Â¼
+; é‡å¯/é€€å‡º/å¸®åŠ©/æ‰“å¼€ç›®å½•
 ^!+r::Reload
 ^!+q::ExitApp, 0
 ^!+F1::Run http://ahkcn.sourceforge.net/docs/AutoHotkey.htm

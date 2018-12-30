@@ -1,4 +1,4 @@
-; ctrl + alt + shift + fuck!!
+﻿; ctrl + alt + shift + fuck!!
 #IfWinExist, Desktop ahk_exe vcxsrv.exe 
 ^!+f::
 WinHide, Desktop ahk_exe vcxsrv.exe

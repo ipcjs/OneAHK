@@ -1,6 +1,6 @@
-; ´ÓWebstormProjects×Ô¶¯ÇĞ»»µ½Ò»¸öAutoRefresh¿ªÍ·µÄÒ³ÃæÖ®ºó, ×Ô¶¯·¢ËÍF5, Ë¢ĞÂËü~
+ï»¿; ä»WebstormProjectsè‡ªåŠ¨åˆ‡æ¢åˆ°ä¸€ä¸ªAutoRefreshå¼€å¤´çš„é¡µé¢ä¹‹å, è‡ªåŠ¨å‘é€F5, åˆ·æ–°å®ƒ~
 ^!+1::
-ToolTips("¿ªÆôÒ³Ãæ×Ô¶¯Ë¢ĞÂ")
+ToolTips("å¼€å¯é¡µé¢è‡ªåŠ¨åˆ·æ–°")
 SetTimer, AutoRefreshPage, 1
 Return
 

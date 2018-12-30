@@ -1,4 +1,4 @@
-; #Include, process_util.lib.ahk
+﻿; #Include, process_util.lib.ahk
 ; #Include, run_program.lib.ahk
 
 ; 启动Everything

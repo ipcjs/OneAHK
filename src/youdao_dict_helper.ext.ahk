@@ -1,16 +1,16 @@
-; ÓĞµÀ´Êµäµ¥´Ê±¾ ¸¨Öú
+ï»¿; æœ‰é“è¯å…¸å•è¯æœ¬ è¾…åŠ©
 #If, WinActive(GetYoudaoWinTitle())
 ~RButton & LButton::
 !RButton::ToYoudaoHotkeyFlag()
 ; LButton:: ToolTip(A_TimeSincePriorHotkey)
 
-#If, !YoudaoHotkeyFlag && WinActive(GetYoudaoWinTitle())  ; YoudaoHotkeyFlagÄ¬ÈÏÎªFalse, ±íÊ¾¿ªÆôÈÈ¼ü...
+#If, !YoudaoHotkeyFlag && WinActive(GetYoudaoWinTitle())  ; YoudaoHotkeyFlagé»˜è®¤ä¸ºFalse, è¡¨ç¤ºå¼€å¯çƒ­é”®...
 LButton::
 RButton::
 %A_ThisHotkey%ClickCount ++
 SetTimer, %A_ThisHotkey%Click, -300
 Return
-; Ê¹ÓÃ¹öÂÖ, ¹Ø±Õ¿ì½İ¼ü
+; ä½¿ç”¨æ»šè½®, å…³é—­å¿«æ·é”®
 WheelUp::
 WheelDown::ToYoudaoHotkeyFlag()
 #If
@@ -19,15 +19,15 @@ WheelDown::ToYoudaoHotkeyFlag()
 LButtonClick:
 ; ToolTips(A_TimeSincePriorHotkey, LButtonClickCount)
 if (LButtonClickCount == 1) {
-	Send, % LButtonYDFlag ? "{Left}" : "{Space}" ; LButtonYDFlagÄ¬ÈÏÎªFalse, ÏÈ·¢ËÍ¿Õ¸ñ
+	Send, % LButtonYDFlag ? "{Left}" : "{Space}" ; LButtonYDFlagé»˜è®¤ä¸ºFalse, å…ˆå‘é€ç©ºæ ¼
 	LButtonYDFlag := !LButtonYDFlag
 } else if (LButtonClickCount == 2) {
 	Send, {Space}{Left}
 	; ToolTips("Next")
 } else if (LButtonClickCount == 3) {
-	; alt+tabÇĞ»»µ½µ¥´Ê±¾ºó, Ä¬ÈÏ²»»á²¶»ñ¼üÅÌÊäÈë, Òªµã»÷Ò»ÏÂµ¥´Ê½çÃæ
+	; alt+tabåˆ‡æ¢åˆ°å•è¯æœ¬å, é»˜è®¤ä¸ä¼šæ•è·é”®ç›˜è¾“å…¥, è¦ç‚¹å‡»ä¸€ä¸‹å•è¯ç•Œé¢
 	Send, {LButton}
-	ToolTip("×ó¼ü")
+	ToolTip("å·¦é”®")
 }
 LButtonClickCount := 0
 Return
@@ -39,7 +39,7 @@ if (RButtonClickCount == 1) {
 	LButtonYDFlag := !LButtonYDFlag
 } else if (RButtonClickCount == 3) {
 	Send, {RButton}
-	ToolTip("ÓÒ¼ü")
+	ToolTip("å³é”®")
 }
 RButtonClickCount := 0
 Return

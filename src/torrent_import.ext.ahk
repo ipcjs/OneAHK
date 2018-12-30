@@ -1,4 +1,4 @@
-; ´ÓÏÂÔØµÄÎÄ¼şµ¼Èëtorrent, Ìø¹ıÉ¢ÁĞ¼ì²é
+ï»¿; ä»ä¸‹è½½çš„æ–‡ä»¶å¯¼å…¥torrent, è·³è¿‡æ•£åˆ—æ£€æŸ¥
 F1::
 Send {F4}{Esc}^c{Tab 3}{Enter}
 WinWaitActive, ahk_class #32770 ahk_exe uTorrent.exe, , 5

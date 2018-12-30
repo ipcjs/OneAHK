@@ -1,12 +1,12 @@
-; Êó±ê¹öÂÖÇĞ»»Chrome´°¿Ú
+ï»¿; é¼ æ ‡æ»šè½®åˆ‡æ¢Chromeçª—å£
 #If, (WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe")) && MouseIsTopOnActiveWin()
 WheelUp::SendBySleep("^{PgUp}")
 WheelDown::SendBySleep("^{PgDn}")
 MouseIsTopOnActiveWin(Edge := 48){
 	CoordMode, Mouse, Window
 	MouseGetPos, X, Y
-	WinGetPos, , , Width, Height, A ; »ñÈ¡»î¶¯´°¿ÚµÄ¿í¸ß
-	return Y < Edge And Y >= 0 And X >= 0 And X <= Width ; Êó±êÒªÔÚ»î¶¯´°¿Ú·¶Î§ÄÚ
+	WinGetPos, , , Width, Height, A ; è·å–æ´»åŠ¨çª—å£çš„å®½é«˜
+	return Y < Edge And Y >= 0 And X >= 0 And X <= Width ; é¼ æ ‡è¦åœ¨æ´»åŠ¨çª—å£èŒƒå›´å†…
 }
 #If
 

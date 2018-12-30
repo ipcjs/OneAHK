@@ -1,7 +1,7 @@
-; ¶ÔÑ¸À×ÐÂ½¨µÄBTÈÎÎñ×Ô¶¯µã»÷È·¶¨
+ï»¿; å¯¹è¿…é›·æ–°å»ºçš„BTä»»åŠ¡è‡ªåŠ¨ç‚¹å‡»ç¡®å®š
 
 CheckNewTaskAlert:
-if WinExist("ÐÂ½¨BTÈÎÎñ ahk_class XLUEModalHostWnd ahk_exe Thunder.exe"){
+if WinExist("æ–°å»ºBTä»»åŠ¡ ahk_class XLUEModalHostWnd ahk_exe Thunder.exe"){
 	WinActivate
 	SendInput, ^{Enter}
 }

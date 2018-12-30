@@ -1,4 +1,4 @@
-; ctrl + alt + shift + fuck!!
+﻿; ctrl + alt + shift + fuck!!
 ^!+f::
 ; 当使用 alt + tab 切换到 VcXsrv 的窗口时, 大概率会导致方向键被映射成数字区的按键
 ; 此时, 点击一下右下角 VcXsrv 的图标, 再把鼠标移动回来, 就行了...

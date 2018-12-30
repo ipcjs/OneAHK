@@ -1,4 +1,4 @@
-; title
+﻿; title
 #IfWinActive, ahk_exe studio64.exe
 
 ^!+d::

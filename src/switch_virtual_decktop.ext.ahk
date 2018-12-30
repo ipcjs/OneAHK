@@ -1,4 +1,4 @@
-; ¹öÂÖÇÐ»»ÐéÄâ×ÀÃæ
+ï»¿; æ»šè½®åˆ‡æ¢è™šæ‹Ÿæ¡Œé¢
 ; #If MouseIsOver("ahk_class Shell_TrayWnd")
 ; #If MouseIsBottomOnScreen(30)
 #If InStr(MouseInEdge(,, 30), "B")
@@ -6,7 +6,7 @@ WheelUp::SwitchVirtualDecktop(-1)
 WheelDown::SwitchVirtualDecktop(1)
 #If
 ~LButton & RButton::Send, #{Tab}
-; Win+F1->F3ÇÐ»»Èý¸ö×ÀÃæ
+; Win+F1->F3åˆ‡æ¢ä¸‰ä¸ªæ¡Œé¢
 #F1::
 #F2::
 #F3::
@@ -16,14 +16,14 @@ cur_num := GetCurNum()
 target_num := SubStr(A_ThisHotkey, 3)
 delta_num := target_num - cur_num
 SwitchVirtualDecktop(delta_num, 0)
-; ShowText("×ÀÃæ: " . GetCurNum())
+; ShowText("æ¡Œé¢: " . GetCurNum())
 ; MsgBox, , , %cur_num%-%target_num%-%delta_num%
 Return
 ; WheelUp::SendBySleep("^#{Left}")
 ; WheelDown::SendBySleep("^#{Right}")
 
 SwitchVirtualDecktop(delta, sleep_time := 200, show_tip := True){
-	GetCurNum() ; »ñÈ¡Ò»´ÎCurNum, Ê¹Æä³õÊ¼»¯
+	GetCurNum() ; èŽ·å–ä¸€æ¬¡CurNum, ä½¿å…¶åˆå§‹åŒ–
 	global CurNum
 	CurNum += delta
 	Log("CurNum:" . CurNum)
@@ -35,7 +35,7 @@ SwitchVirtualDecktop(delta, sleep_time := 200, show_tip := True){
 	}
 	Sleep, sleep_time
 	if(show_tip){
-		ToolTip("×ÀÃæ: " . CurNum, 0, 0, "Screen")
+		ToolTip("æ¡Œé¢: " . CurNum, 0, 0, "Screen")
 	}
 }
 
@@ -44,13 +44,13 @@ MouseIsOver(WinTitle) {
     return WinExist(WinTitle . " ahk_id " . Win)
 }
 
-; ÅÐ¶Ï(X, Y)ÔÚÆÁÄ»ÖÐµÄÄÄ¸öÎ»ÖÃ
+; åˆ¤æ–­(X, Y)åœ¨å±å¹•ä¸­çš„å“ªä¸ªä½ç½®
 MouseInEdge(X := "", Y := "", edge := 8){
 	if(X == "" Or Y == ""){
 		CoordMode, Mouse, Screen
 		MouseGetPos, X, Y
 	}
-	; ÊÊÅä¶à¼àÊÓÆ÷
+	; é€‚é…å¤šç›‘è§†å™¨
 	SysGet, MonitorCount, MonitorCount
 	Loop, % MonitorCount {
 		SysGet, Mon, Monitor, % A_Index
@@ -80,10 +80,10 @@ GetCurNum(){
 	Return CurNum
 }
 
-; ·ÏÆú
+; åºŸå¼ƒ
 MouseIsBottomOnScreen(Edge := 8){
-	MouseGetPos, X, Y ; »ñÈ¡µ±Ç°Êó±êÎ»ÖÃ
-	SysGet, Mon, Monitor ; »ñÈ¡Ö÷Òª¼àÊÓÆ÷µÄ×ø±ê²ÎÊý
+	MouseGetPos, X, Y ; èŽ·å–å½“å‰é¼ æ ‡ä½ç½®
+	SysGet, Mon, Monitor ; èŽ·å–ä¸»è¦ç›‘è§†å™¨çš„åæ ‡å‚æ•°
 	Log("Y:", Y, "MonBottom:", MonBottom)
 	return Y > MonBottom - Edge
 }

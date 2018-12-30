@@ -1,5 +1,5 @@
-; µ¯ÍèÂÛÆÆ¸¨Öú°´¼ü¹¤¾ß
-; alt+ÓÒ¼ü, ¿ª/¹ØÓÒ¼ü×Ô¶¯²¥·Å
+ï»¿; å¼¹ä¸¸è®ºç ´è¾…åŠ©æŒ‰é”®å·¥å…·
+; alt+å³é”®, å¼€/å…³å³é”®è‡ªåŠ¨æ’­æ”¾
 
 ; dr_rbutton_flag := True
 get_DR_WIN_TITLE(){
@@ -8,7 +8,7 @@ get_DR_WIN_TITLE(){
 }
 
 UpdateState(){
-	global dr_rbutton_flag ; Ê¹º¯ÊıÄÚ¿ÉÒıÓÃÈ«¾Ö±äÁ¿
+	global dr_rbutton_flag ; ä½¿å‡½æ•°å†…å¯å¼•ç”¨å…¨å±€å˜é‡
 	ShowText(dr_rbutton_flag ? "ON" : "OFF")
 }
 
@@ -18,12 +18,12 @@ ShowText(text){
 	ToolTip
 }
 
-; µ¯Íè°´¼ü¸¨Öú
+; å¼¹ä¸¸æŒ‰é”®è¾…åŠ©
 #If, WinActive(get_DR_WIN_TITLE())
 f::LButton
 g::RButton
 !RButton:: 
-dr_rbutton_flag := !dr_rbutton_flag ; dr_rbutton_flagÎ´³õÊ¼»¯, Ä¬ÈÏÎª"", Ïàµ±ÓÚFalse
+dr_rbutton_flag := !dr_rbutton_flag ; dr_rbutton_flagæœªåˆå§‹åŒ–, é»˜è®¤ä¸º"", ç›¸å½“äºFalse
 UpdateState()
 Return
 #If

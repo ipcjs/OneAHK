@@ -1,4 +1,4 @@
-RG_RunProgram(programs*){
+﻿RG_RunProgram(programs*){
     For index, program in programs {
         if FileExist(program){
             ToolTip("Run " . program)

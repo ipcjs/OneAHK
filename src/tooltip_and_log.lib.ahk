@@ -1,7 +1,7 @@
-; ToolTipºÍLogº¯Êı
+ï»¿; ToolTipå’ŒLogå‡½æ•°
 TOOLTIP_SHOW_NEVER := -2
 TOOLTIP_SHOW_ALWAY := -1
-LOG_CMD_CLEAR := "__clear__" ; LogÃüÁî, Çå³ıLog
+LOG_CMD_CLEAR := "__clear__" ; Logå‘½ä»¤, æ¸…é™¤Log
 
 LOG_TOOLTIP_SHOW_DEFAULT := TOOLTIP_SHOW_NEVER
 ; LOG_TOOLTIP_SHOW_DEFAULT := 2000
@@ -10,8 +10,8 @@ LOG_TOOLTIP_SHOW_DEFAULT := TOOLTIP_SHOW_NEVER
 ; Log_CACHE_MAX_LINE_NUM := 0
 Log_CACHE_MAX_LINE_NUM := 30
 
-; show_time, -2, ²»ÏÔÊ¾; -1ÎªÒ»Ö±ÏÔÊ¾; >=0ÎªÏÔÊ¾ÇÒÑÓ³ÙÖ¸¶¨Ê±¼äÒÆ³ı
-; which, 19ÎªÄ¬ÈÏÖµ, ÓÃÀ´×öÆÕÍ¨µÄÌáÊ¾ÎÄ×Ö; 20ÓÃ×÷LogÊä³ö;
+; show_time, -2, ä¸æ˜¾ç¤º; -1ä¸ºä¸€ç›´æ˜¾ç¤º; >=0ä¸ºæ˜¾ç¤ºä¸”å»¶è¿ŸæŒ‡å®šæ—¶é—´ç§»é™¤
+; which, 19ä¸ºé»˜è®¤å€¼, ç”¨æ¥åšæ™®é€šçš„æç¤ºæ–‡å­—; 20ç”¨ä½œLogè¾“å‡º;
 ToolTip(text, x := 0, y := 0, coord_mode := "Window", show_time := 2000, append := False, which := 19){ 
 	global CurToolTipCoordMode, ToolTipText19, ToolTipText20, TOOLTIP_SHOW_NEVER, TOOLTIP_SHOW_ALWAY
 	if(append){
@@ -30,9 +30,9 @@ ToolTip(text, x := 0, y := 0, coord_mode := "Window", show_time := 2000, append 
 	} else if(show_time == TOOLTIP_SHOW_NEVER){
 		; pass
 	} 
-	; Debug("¿ì½İ¼ü:", A_ThisHotkey, "to_show:", to_show, "to_remove:", to_remove)
+	; Debug("å¿«æ·é”®:", A_ThisHotkey, "to_show:", to_show, "to_remove:", to_remove)
 	if(to_show){
-		if(A_ThisHotkey){ ; Ö»ÓĞ¿ì½İ¼ü²»Îª¿ÕÊ±²ÅÉèÖÃ×ø±êÄ£Ê½, ·ÀÖ¹¸ÄĞ´Ä¬ÈÏµÄ×ø±êÄ£Ê½
+		if(A_ThisHotkey){ ; åªæœ‰å¿«æ·é”®ä¸ä¸ºç©ºæ—¶æ‰è®¾ç½®åæ ‡æ¨¡å¼, é˜²æ­¢æ”¹å†™é»˜è®¤çš„åæ ‡æ¨¡å¼
 			CoordMode, ToolTip, % coord_mode
 		}		
 		ToolTip, % ToolTipText%which%, x, y, which
@@ -46,19 +46,19 @@ ToolTips(strings*){
 	ToolTip(MergeStrings(strings*))
 }
 
-; ÏÔÊ¾Log
+; æ˜¾ç¤ºLog
 Log(strings*){
 	global LOG_TOOLTIP_SHOW_DEFAULT, TOOLTIP_SHOW_NEVER, TOOLTIP_SHOW_ALWAY, LOG_CMD_CLEAR, LOG_CACHE_MAX_LINE_NUM
 	static line_num := 0
 	append := True
 	text := ""
-	if(strings[1] == LOG_CMD_CLEAR){ ; È¡Êı×éµÄÔªËØ, ÈôÔ½½çÁË, ·µ»Ø¿Õ×Ö·û´®
+	if(strings[1] == LOG_CMD_CLEAR){ ; å–æ•°ç»„çš„å…ƒç´ , è‹¥è¶Šç•Œäº†, è¿”å›ç©ºå­—ç¬¦ä¸²
 		text := strings[1]
 		append := False
 	} else {
 		text := MergeStrings(strings*)
 	}
-	line_num ++ ; log»º´æĞĞÊı³¬¹ı×î´óĞĞÊıºó, Çå¿Õ»º´æ
+	line_num ++ ; logç¼“å­˜è¡Œæ•°è¶…è¿‡æœ€å¤§è¡Œæ•°å, æ¸…ç©ºç¼“å­˜
 	if(LOG_CACHE_MAX_LINE_NUM > 0 And line_num > LOG_CACHE_MAX_LINE_NUM){
 		line_num := 1
 		append := False
@@ -69,7 +69,7 @@ Log(strings*){
 Debug(strings*){
 	OutputDebug, % MergeStrings(strings*)
 }
-; ´òÓ¡µ½Debug¿Í»§¶Ë
+; æ‰“å°åˆ°Debugå®¢æˆ·ç«¯
 MergeStrings(strings*){
 	out := ""
 	for i, str in strings {

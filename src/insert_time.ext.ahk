@@ -1,4 +1,4 @@
-; ²åÈëÊ±¼ä
+ï»¿; æ’å…¥æ—¶é—´
 SendTimeByFormat(format){
 	FormatTime, CurrentDateTime,, %format%
 	SendInput %CurrentDateTime%

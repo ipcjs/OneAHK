@@ -1,4 +1,4 @@
-; 屏蔽数字按键
+﻿; 屏蔽数字按键
 ; #If, WinActive("ahk_exe vcxsrv.exe")
 ; Left::NumpadLeft
 ; Right::NumpadRight

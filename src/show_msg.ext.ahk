@@ -1,2 +1,2 @@
-; AHKµ”À‹
+Ôªø; Hello world!
 MsgBox, , , hello world, 

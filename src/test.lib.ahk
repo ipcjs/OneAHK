@@ -1,3 +1,3 @@
-; testÎÒÊÇÒ»¸ö½Å±¾
+ï»¿; testæˆ‘æ˜¯ä¸€ä¸ªè„šæœ¬
 ; MsgBox, , , hello world, 
 ; test := "hello world!"

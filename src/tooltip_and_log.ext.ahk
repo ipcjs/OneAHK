@@ -1,15 +1,15 @@
-; ToolTipºÍLogº¯Êı
-; Çå¿ÕLog
+ï»¿; ToolTipå’ŒLogå‡½æ•°
+; æ¸…ç©ºLog
 ^!+c::
 Log(LOG_CMD_CLEAR) 
 Debug(LOG_CMD_CLEAR)
 Return
 
-; ÓÃÀ´¹Ø±Õ19ºÅToolTip
+; ç”¨æ¥å…³é—­19å·ToolTip
 RemoveToolTip19:
 ToolTip, , , , 19
 return
-; ÓÃÀ´¹Ø±Õ20ºÅToolTip
+; ç”¨æ¥å…³é—­20å·ToolTip
 RemoveToolTip20:
 ToolTip, , , , 20
 return

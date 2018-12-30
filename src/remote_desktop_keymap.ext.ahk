@@ -1,4 +1,4 @@
-; 映射ctrl+alt+left/right
+﻿; 映射ctrl+alt+left/right
 ; 通过按快捷键打开当前文件, 达到控制功能开关的目的...
 ; ^!+d::
 ; IfWinExist, remote_desktop_keymap.ext.ahk

@@ -1,15 +1,15 @@
-;´°¿Ú¹ÜÀí
+ï»¿;çª—å£ç®¡ç†
 
-; ÇĞ»»ÖÃ¶¥
+; åˆ‡æ¢ç½®é¡¶
 Capslock & a::winset,alwaysontop,toggle,a
 
-; ÇĞ»»Í¸Ã÷/²»Í¸Ã÷
+; åˆ‡æ¢é€æ˜/ä¸é€æ˜
 CapsLock & t::
 MouseGetPos, MouseX, MouseY, MouseWin
 PixelGetColor, MouseRGB, %MouseX%, %MouseY%, RGB
 WinGet, Transparent, Transparent, A
 WinGet, TransColor, TransColor, A
-ToolTips("Í¸Ã÷¶È:", Transparent, "ÑÕÉ«:", TransColor, "Êó±êÎ»ÖÃÑÕÉ«:", MouseRGB)
+ToolTips("é€æ˜åº¦:", Transparent, "é¢œè‰²:", TransColor, "é¼ æ ‡ä½ç½®é¢œè‰²:", MouseRGB)
 if (TransColor) {
 	WinSet, TransColor, Off, A
 } else {

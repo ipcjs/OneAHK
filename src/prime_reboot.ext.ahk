@@ -1,4 +1,4 @@
-; ÖØÆôPRimeµÄ½Å±¾
+ï»¿; é‡å¯PRimeçš„è„šæœ¬
 ^!+Space::
 Process, Close, PIMELauncher.exe
 Run, C:\Program Files (x86)\PIME\PIMELauncher.exe

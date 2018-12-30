@@ -1,4 +1,4 @@
-; °´Êó±ê×ó¼ü/»Ø³µ/¿Õ¸ñ, ¹Ø±ÕSublime¸¶·Ñ´°¿Ú
+ï»¿; æŒ‰é¼ æ ‡å·¦é”®/å›è½¦/ç©ºæ ¼, å…³é—­Sublimeä»˜è´¹çª—å£
 #If WinActive("This is an unregistered copy ahk_exe sublime_text.exe")
 LButton::
 Enter::

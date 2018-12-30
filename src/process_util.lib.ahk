@@ -1,4 +1,4 @@
-
+﻿
 ; 计算同名进程的个数
 PU_CountByName(name){
     count := 0
