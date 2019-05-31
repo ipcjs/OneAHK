@@ -45,3 +45,4 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/torrent_import.ext.ahk
 ; #Include, src/auto_start_thunder_down.ext.ahk
 #Include, src/ahk_helper.ext.ahk
+#Include, src/ps_save_as_png.ext.ahk
