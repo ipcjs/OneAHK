@@ -4,7 +4,7 @@
 ; 启动Everything
 ; 方式一: 直接运行
 !f::
-RG_RunProgram("C:\Program Files\Everything\Everything.exe", "D:\Dropbox\PortableSoft\Everything\Everything-1.4.1.877.x64\Everything.exe")
+RG_RunProgram("C:\Program Files\Everything\Everything.exe", "D:\Dropbox\PortableSoft\Everything\Everything.exe")
 Return
 
 ; 方式二: 通过判断是否有进程, 决定直接启动还是发送按键, 感觉有一点延迟...不启用
@@ -13,7 +13,7 @@ $!f::
 ; Everything一般有一个后台服务, 故这里判断进程是否小于1
 If (PU_CountByName("Everything.exe") <= 1){
     ToolTip("Start Everything")
-    Run, D:\Dropbox\PortableSoft\Everything\Everything-1.4.1.877.x64\Everything.exe
+    Run, D:\Dropbox\PortableSoft\Everything\Everything.exe
 } else {
     SendInput, !f
 }
