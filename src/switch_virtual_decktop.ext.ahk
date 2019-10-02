@@ -6,7 +6,7 @@ WheelUp::SwitchVirtualDecktop(-1)
 WheelDown::SwitchVirtualDecktop(1)
 #If
 ; 左键+右键 切换多任务视图
-~LButton & RButton::Send, #{Tab}
+; ~LButton & RButton::Send, #{Tab}
 ; Win+F1->F3切换三个桌面
 #F1::
 #F2::
