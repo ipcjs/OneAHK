@@ -27,7 +27,6 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/dr2_helper.ext.ahk
 ; #Include, src/dr3_helper.ext.ahk
 #Include, src/insert_time.ext.ahk
-#Include, src/window_manager.ext.ahk
 #Include, src/tooltip_and_log.ext.ahk
 ; #Include, src/youdao_dict_helper.ext.ahk
 #Include, src/switch_virtual_decktop.ext.ahk
@@ -36,7 +35,6 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/auto_refresh_page_for_js.ext.ahk
 ; #Include, src/prime_reboot.ext.ahk
 ; #Include, src/activate_vcxsrv_root_windows.ext.ahk
-#Include, src/run_program.ext.ahk
 #Include, src/remote_desktop_keymap.ext.ahk
 #Include, src/build-and-decompile-dir.ext.ahk
 ; #Include, src/island_helper.ext.ahk
@@ -47,3 +45,9 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/ahk_helper.ext.ahk
 #Include, src/ps_save_as_png.ext.ahk
 #Include, src/rog_key_map.ext.ahk
+
+; 游戏中禁用一些快捷键
+#IfWinNotActive, ahk_exe TslGame.exe
+#Include, src/window_manager.ext.ahk
+#Include, src/run_program.ext.ahk
+#IfWinNotActive
