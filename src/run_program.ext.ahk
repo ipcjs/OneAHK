@@ -20,7 +20,9 @@ If (PU_CountByName("Everything.exe") <= 1){
 Return
 #If
 
+#If, False
 ; 启动有道词典
 !+a::
 RG_RunProgram("C:\Users\JiangSong\AppData\Local\youdao\dict\Application\YoudaoDict.exe", "C:\Users\ipcjs\AppData\Local\Youdao\Dict\Application\YoudaoDict.exe")
 Return
+#If
