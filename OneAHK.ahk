@@ -9,6 +9,7 @@ TrayTip, , 快捷工具, 1, 16
 ; 导入lib模块
 ; lib模块只包含"初始化代码块"和方法, 不能包含热键/热字串/标签/Return
 #Include, src/test.lib.ahk
+#Include, src/utils.lib.ahk
 #Include, src/tooltip_and_log.lib.ahk
 #Include, src/process_util.lib.ahk
 #Include, src/run_program.lib.ahk
@@ -24,6 +25,7 @@ TrayTip, , 快捷工具, 1, 16
 ; AaBbCc: 全局变量/函数/命令/类
 ; 
 #Include, src/test.ext.ahk
+#Include, src/process.ext.ahk
 ; #Include, src/dr2_helper.ext.ahk
 ; #Include, src/dr3_helper.ext.ahk
 #Include, src/insert_time.ext.ahk
