@@ -3,7 +3,7 @@
 
 ; 启动Everything
 ; 方式一: 直接运行
-!f::
+>!f::
 RG_RunProgram("C:\Program Files\Everything\Everything.exe", "D:\Dropbox\PortableSoft\Everything\Everything.exe", "C:\Users\ipcjs\Dropbox\PortableSoft\Everything\Everything.exe")
 Return
 
