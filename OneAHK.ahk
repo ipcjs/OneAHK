@@ -47,6 +47,7 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/ahk_helper.ext.ahk
 #Include, src/ps_save_as_png.ext.ahk
 #Include, src/rog_key_map.ext.ahk
+#Include, src/scrcpy_helper.ext.ahk
 
 ; 游戏中禁用一些快捷键
 #IfWinNotActive, ahk_exe TslGame.exe
