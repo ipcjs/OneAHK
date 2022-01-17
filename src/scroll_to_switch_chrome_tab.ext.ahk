@@ -1,5 +1,5 @@
 ﻿; 鼠标滚轮切换Chrome窗口
-#If, (WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe")) && MouseIsTopOnActiveWin()
+#If, (WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe msedge.exe")) && MouseIsTopOnActiveWin()
 WheelUp::SendBySleep("^{PgUp}")
 WheelDown::SendBySleep("^{PgDn}")
 MouseIsTopOnActiveWin(Edge := 48){
