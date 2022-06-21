@@ -32,6 +32,7 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/tooltip_and_log.ext.ahk
 ; #Include, src/youdao_dict_helper.ext.ahk
 #Include, src/switch_virtual_decktop.ext.ahk
+#Include, src/switch_windows_like_mac_os.ext.ahk
 #Include, src/close_sublime_purchase_win.ext.ahk
 #Include, src/scroll_to_switch_chrome_tab.ext.ahk
 ; #Include, src/auto_refresh_page_for_js.ext.ahk
