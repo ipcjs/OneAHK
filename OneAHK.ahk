@@ -33,7 +33,7 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/youdao_dict_helper.ext.ahk
 #Include, src/switch_virtual_decktop.ext.ahk
 #Include, src/switch_windows_like_mac_os.ext.ahk
-#Include, src/close_sublime_purchase_win.ext.ahk
+; #Include, src/close_sublime_purchase_win.ext.ahk
 #Include, src/scroll_to_switch_chrome_tab.ext.ahk
 ; #Include, src/auto_refresh_page_for_js.ext.ahk
 ; #Include, src/prime_reboot.ext.ahk
@@ -46,7 +46,7 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/torrent_import.ext.ahk
 ; #Include, src/auto_start_thunder_down.ext.ahk
 #Include, src/ahk_helper.ext.ahk
-#Include, src/ps_save_as_png.ext.ahk
+; #Include, src/ps_save_as_png.ext.ahk
 #Include, src/rog_key_map.ext.ahk
 #Include, src/scrcpy_helper.ext.ahk
 
