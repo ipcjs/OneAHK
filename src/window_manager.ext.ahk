@@ -16,3 +16,19 @@ if (TransColor) {
 	WinSet, TransColor, %MouseRGB% 200, A
 }
 return
+
+#If, False
+; 激活一组窗口, 尝试实现类似macOS的效果
+; 参考: https://superuser.com/a/1365443/544036
+!`::
+WinGetClass, class, A
+WinGet, currentWindowId ,, A
+WinGet, id, list, ahk_class %class%
+Loop, %id%
+{
+    this_id := id%A_Index%
+    WinActivate, ahk_id %this_id%
+}
+WinActivate, ahk_id %currentWindowId% ;bring the current window back to front
+return
+#If
