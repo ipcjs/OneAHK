@@ -1,6 +1,8 @@
 ﻿; 底部状态栏点击转换成Ctrl+点击, 实现点击切换窗口的效果
 #If InStr(MouseInEdge(,, 48), "B") && !IsFullscreen()
-$LButton::Send, ^{LButton}
+; 按下时发送Down, 防止不能拖拽, 存在往任务栏外拖不会放手的bug(
+LButton::Send, {LButton Down}
+LButton UP::Send, ^{LButton}
 $^LButton::Send, {LButton}
 #If
 
