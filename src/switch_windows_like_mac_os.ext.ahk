@@ -4,6 +4,15 @@ $LButton::Send, ^{LButton}
 $^LButton::Send, {LButton}
 #If
 
+#If !IsFullscreen()
+#1::^#1
+#2::^#2
+#3::^#3
+#4::^#4
+#5::^#5
+; $^#1::#1
+#If
+
 IsFullscreen() {
     WinGetPos, x, y, w, h, A
     return (x == 0 && y == 0 && w == A_ScreenWidth && h == A_ScreenHeight)
