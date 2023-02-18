@@ -16,3 +16,9 @@ Array_RemoveIfExist(array, value) {
     }
     return False
 }
+
+; 发送按键后Sleep, 能够起到防止过快发送按键的目的
+SendBySleep(key, sleep_time := 200){
+	SendInput %key%
+	Sleep, sleep_time
+}

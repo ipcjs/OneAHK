@@ -9,8 +9,3 @@ MouseIsTopOnActiveWin(Edge := 48){
 	return Y < Edge And Y >= 0 And X >= 0 And X <= Width ; 鼠标要在活动窗口范围内
 }
 #If
-
-SendBySleep(key, sleep_time := 200){
-	SendInput %key%
-	Sleep, sleep_time
-}
