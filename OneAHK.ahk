@@ -55,5 +55,5 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/run_program.ext.ahk
 ; #Include, src/switch_windows_like_mac_os.ext.ahk
 #Include, src/mac_os_style_keymaps.ext.ahk
-; #Include, src/fix_repeated_triggering_of_keys.ext.ahk
+#Include, src/fix_repeated_triggering_of_keys.ext.ahk
 #IfWinNotActive
