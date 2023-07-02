@@ -12,6 +12,9 @@ return
 ::date3::
 SendTimeByFormat("yyyy/M/d")
 return
+::date4::
+SendTimeByFormat("yyyyMMdd")
+return
 ::time1::
 SendTimeByFormat("HH:mm:ss")
 return
