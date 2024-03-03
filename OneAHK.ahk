@@ -13,6 +13,7 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/tooltip_and_log.lib.ahk
 #Include, src/process_util.lib.ahk
 #Include, src/run_program.lib.ahk
+#Include, src/rime.lib.ahk
 ; #Include, src/auto_start_thunder_down.lib.ahk
 
 
