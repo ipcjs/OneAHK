@@ -1,1 +1,2 @@
-SetTimer, RimeEnsureWeaselServer , -3000
+RimeEnsureWeaselServerCount = 0
+SetTimer, RimeEnsureWeaselServer , 1000

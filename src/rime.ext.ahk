@@ -16,5 +16,10 @@ Process, Wait, WeaselServer.exe, 20
 rime_pid = %ErrorLevel%
 if (rime_pid = 0) {
     Run, "C:\Program Files (x86)\Rime\weasel-0.15.0\WeaselServer.exe"
+} else {
+    RimeEnsureWeaselServerCount += 1
+    if (RimeEnsureWeaselServerCount >= 5) {
+        SetTimer, , Off
+    }
 }
 Return
