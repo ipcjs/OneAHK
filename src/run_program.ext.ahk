@@ -1,6 +1,13 @@
 ﻿; #Include, process_util.lib.ahk
 ; #Include, run_program.lib.ahk
 
+; #IfWinNotExist, ahk_exe YoudaoDict.exe
+; 启动有道词典
+!+a::
+RG_RunProgram("C:\Users\JiangSong\AppData\Local\youdao\dict\Application\YoudaoDict.exe", "C:\Users\ipcjs\AppData\Local\Youdao\Dict\Application\YoudaoDict.exe")
+Return
+; #If
+
 ; 启动Everything
 ; 方式一: 直接运行
 >!f::
@@ -20,9 +27,3 @@ If (PU_CountByName("Everything.exe") <= 1){
 Return
 #If
 
-#IfWinNotExist, ahk_exe YoudaoDict.exe
-; 启动有道词典
-!+a::
-RG_RunProgram("C:\Users\JiangSong\AppData\Local\youdao\dict\Application\YoudaoDict.exe", "C:\Users\ipcjs\AppData\Local\Youdao\Dict\Application\YoudaoDict.exe")
-Return
-#If
