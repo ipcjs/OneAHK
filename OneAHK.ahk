@@ -13,7 +13,7 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/tooltip_and_log.lib.ahk
 #Include, src/process_util.lib.ahk
 #Include, src/run_program.lib.ahk
-#Include, src/rime.lib.ahk
+; #Include, src/rime.lib.ahk
 ; #Include, src/auto_start_thunder_down.lib.ahk
 
 
@@ -36,7 +36,8 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/close_sublime_purchase_win.ext.ahk
 #Include, src/scroll_to_switch_chrome_tab.ext.ahk
 ; #Include, src/auto_refresh_page_for_js.ext.ahk
-#Include, src/rime.ext.ahk
+; #Include, src/rime.ext.ahk
+#Include, src/rime_hotkeys.ext.ahk
 ; #Include, src/activate_vcxsrv_root_windows.ext.ahk
 #Include, src/remote_desktop_keymap.ext.ahk
 #Include, src/build-and-decompile-dir.ext.ahk
