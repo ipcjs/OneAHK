@@ -11,6 +11,8 @@
 
 ; 切换相同程序的窗口
 ; https://superuser.com/questions/1604626
+; 效果不好, 使用 https://github.com/sigoden/window-switcher 替代
+#If, False
 <^`::
 WinGetClass, OldClass, A
 WinGet, ActiveProcessName, ProcessName, A
@@ -25,3 +27,4 @@ loop, 2 {
     break
 }
 Return
+#If
