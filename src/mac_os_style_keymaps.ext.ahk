@@ -1,6 +1,8 @@
 ﻿; macOS风格的快捷键
 ; 终止进程
 #c::Send, ^c
+; tmux前缀键
+#b::Send, ^b
 
 ; 左移光标
 <!Left::Send, ^{Left}
