@@ -14,6 +14,11 @@ Return
 RG_RunProgram("C:\Program Files\Everything\Everything.exe", "D:\Dropbox\PortableSoft\Everything\Everything.exe", "C:\Users\ipcjs\Dropbox\PortableSoft\Everything\Everything.exe")
 Return
 
+; 启动Cherry Studio
+#`::
+RG_RunProgram("C:\Users\ipcjs\AppData\Local\Programs\Cherry Studio\Cherry Studio.exe")
+Return
+
 ; 方式二: 通过判断是否有进程, 决定直接启动还是发送按键, 感觉有一点延迟...不启用
 #If, False 
 $!f::
