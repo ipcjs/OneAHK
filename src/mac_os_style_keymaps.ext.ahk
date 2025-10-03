@@ -30,3 +30,10 @@ loop, 2 {
 }
 Return
 #If
+
+; VNC中交换Cmd和Ctrl键
+#IfWinActive, ahk_exe vncviewer.exe
+Ctrl::Alt
+Alt::Ctrl
+#If
+
