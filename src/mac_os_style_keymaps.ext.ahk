@@ -3,6 +3,8 @@
 #c::Send, ^c
 ; tmux前缀键
 #b::Send, ^b
+; 删除
+^Backspace::Send, {Delete}
 
 ; 左移光标
 <!Left::Send, ^{Left}
