@@ -15,9 +15,17 @@ RG_RunProgram("C:\Program Files\Everything\Everything.exe", "D:\Dropbox\Portable
 Return
 
 ; 启动Cherry Studio
+#If, False
 #`::
 RG_RunProgram("C:\Users\ipcjs\AppData\Local\Programs\Cherry Studio\Cherry Studio.exe")
 Return
+#If
+
+; 启动Codex
+#`::
+RG_RunProgram("C:\Program Files\WindowsApps\OpenAI.Codex_26.924.2738.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe")
+Return
+
 
 ; 方式二: 通过判断是否有进程, 决定直接启动还是发送按键, 感觉有一点延迟...不启用
 #If, False 
