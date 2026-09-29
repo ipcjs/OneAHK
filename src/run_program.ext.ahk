@@ -23,7 +23,7 @@ Return
 
 ; 启动Codex
 #`::
-RG_RunProgram("C:\Program Files\WindowsApps\OpenAI.Codex_26.924.2738.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe")
+Run, explorer.exe shell:AppsFolder\OpenAI.Codex_2p2nqsd0c76g0!App
 Return
 
 
