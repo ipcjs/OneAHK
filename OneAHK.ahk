@@ -16,8 +16,6 @@ TrayTip, , 快捷工具, 1, 16
 ; #Include, src/rime.lib.ahk
 ; #Include, src/auto_start_thunder_down.lib.ahk
 
-
-
 ; 导入ext模块
 ; ext模块只包含热键/热字串/标签和方法, 不能包含"初始化代码块"
 ; 代码规范: 
@@ -60,3 +58,7 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/mac_os_style_keymaps.ext.ahk
 ; #Include, src/fix_repeated_triggering_of_keys.ext.ahk
 #IfWinNotActive
+; 游戏中启用一些快捷键
+#IfWinActive, ahk_exe TslGame.exe
+#Include, src/game_mode.ext.ahk
+#IfWinActive
