@@ -13,6 +13,7 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/tooltip_and_log.lib.ahk
 #Include, src/process_util.lib.ahk
 #Include, src/run_program.lib.ahk
+#Include, src/game_mode.lib.ahk
 ; #Include, src/rime.lib.ahk
 ; #Include, src/auto_start_thunder_down.lib.ahk
 
@@ -30,6 +31,7 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/insert_time.ext.ahk
 #Include, src/tooltip_and_log.ext.ahk
 ; #Include, src/youdao_dict_helper.ext.ahk
+#Include, src/switch_virtual_decktop.ext.ahk
 ; #Include, src/close_sublime_purchase_win.ext.ahk
 #Include, src/scroll_to_switch_chrome_tab.ext.ahk
 ; #Include, src/auto_refresh_page_for_js.ext.ahk
@@ -49,16 +51,16 @@ TrayTip, , 快捷工具, 1, 16
 #Include, src/scrcpy_helper.ext.ahk
 #Include, src/jianying_helper.ext.ahk
 
-; 游戏中禁用一些快捷键
-#IfWinNotActive, ahk_exe TslGame.exe
-#Include, src/switch_virtual_decktop.ext.ahk
+; 游戏中批量禁用一批快捷键, 由于#If不支持嵌套, 故必须保证这些ext.ahk内部不使用#If语句
+#If, !GM_IsGameMode()
 #Include, src/window_manager.ext.ahk
 #Include, src/run_program.ext.ahk
 ; #Include, src/switch_windows_like_mac_os.ext.ahk
-#Include, src/mac_os_style_keymaps.ext.ahk
 ; #Include, src/fix_repeated_triggering_of_keys.ext.ahk
-#IfWinNotActive
-; 游戏中启用一些快捷键
-#IfWinActive, ahk_exe TslGame.exe
+#Include, src/mac_os_style_keymaps.ext.ahk
+#If
+
+; 游戏中启用一些快捷键, 同上
+#If, GM_IsGameMode()
 #Include, src/game_mode.ext.ahk
-#IfWinActive
+#If

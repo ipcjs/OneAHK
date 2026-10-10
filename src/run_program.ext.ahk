@@ -15,11 +15,11 @@ RG_RunProgram("C:\Program Files\Everything\Everything.exe", "D:\Dropbox\Portable
 Return
 
 ; 启动Cherry Studio
-#If, False
+/*
 #`::
 RG_RunProgram("C:\Users\ipcjs\AppData\Local\Programs\Cherry Studio\Cherry Studio.exe")
 Return
-#If
+*/
 
 ; 启动Codex
 #`::
@@ -28,7 +28,7 @@ Return
 
 
 ; 方式二: 通过判断是否有进程, 决定直接启动还是发送按键, 感觉有一点延迟...不启用
-#If, False 
+/*
 $!f::
 ; Everything一般有一个后台服务, 故这里判断进程是否小于1
 If (PU_CountByName("Everything.exe") <= 1){
@@ -38,5 +38,5 @@ If (PU_CountByName("Everything.exe") <= 1){
     SendInput, !f
 }
 Return
-#If
+*/
 

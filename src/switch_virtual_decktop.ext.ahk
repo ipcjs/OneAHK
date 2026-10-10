@@ -1,7 +1,7 @@
 ﻿; 滚轮切换虚拟桌面
 ; #If MouseIsOver("ahk_class Shell_TrayWnd")
 ; #If MouseIsBottomOnScreen(30)
-#If InStr(MouseInEdge(,, 30), "B")
+#If !GM_IsGameMode() && InStr(MouseInEdge(,, 30), "B")
 WheelUp::SwitchVirtualDecktop(-1)
 WheelDown::SwitchVirtualDecktop(1)
 #If

@@ -16,13 +16,13 @@
 ; 切换相同程序的窗口
 ; https://superuser.com/questions/1604626
 ; 效果不好, 使用 https://github.com/sigoden/window-switcher 替代
-#If, False
+/*
 <^`::
 WinGetClass, OldClass, A
 WinGet, ActiveProcessName, ProcessName, A
 WinGet, WinClassCount, Count, ahk_exe %ActiveProcessName%
 IF WinClassCount = 1
-    Return
+Return
 loop, 2 {
   WinSet, Bottom,, A
   WinActivate, ahk_exe %ActiveProcessName%
@@ -31,11 +31,5 @@ loop, 2 {
     break
 }
 Return
-#If
-
-; VNC中交换Cmd和Ctrl键
-#IfWinActive, ahk_exe vncviewer.exe
-Ctrl::Alt
-Alt::Ctrl
-#If
+*/
 

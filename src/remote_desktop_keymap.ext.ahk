@@ -16,4 +16,8 @@
 ; #IfWinActive
 #IfWinExist
 
-
+; VNC中交换Cmd和Ctrl键
+#IfWinActive, ahk_exe vncviewer.exe
+Ctrl::Alt
+Alt::Ctrl
+#IfWinActive
